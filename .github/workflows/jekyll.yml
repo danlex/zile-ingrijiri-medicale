@@ -35,7 +35,9 @@ jobs:
           enablement: true
 
       - name: Build with Jekyll
-        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+        # Served at the custom apex domain (see CNAME), so the site lives at the
+        # root path — build with an empty baseurl rather than the project base_path.
+        run: bundle exec jekyll build --baseurl ""
         env:
           JEKYLL_ENV: production
 
