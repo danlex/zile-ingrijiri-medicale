@@ -7,12 +7,17 @@
       <p class="footer-assoc">Site asociat:
         <a href="https://varzaru.ro" target="_blank" rel="noopener">varzaru.ro</a>
       </p>
+      <div class="footer-social">
+        <a href="{{ site.social.linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+        <a href="{{ site.social.instagram }}" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+        <a href="{{ site.social.facebook }}" target="_blank" rel="noopener" aria-label="Facebook">Facebook</a>
+      </div>
     </div>
     <div class="footer-col">
       <h4>Contact</h4>
       <p><a href="tel:{{ site.contact.phone_href }}">{{ site.contact.phone }}</a></p>
       <p><a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></p>
-      <p>{{ site.contact.address }}</p>
+      <p><a href="https://www.google.com/maps/search/?api=1&amp;query={{ site.contact.maps_query | url_encode }}" target="_blank" rel="noopener">{{ site.contact.address }}</a></p>
     </div>
     <div class="footer-col">
       <h4>Navigare</h4>

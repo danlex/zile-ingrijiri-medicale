@@ -20,6 +20,13 @@ contact:
   email: "office@varzaru.ro"
   address: "Strada Bibescu Vodă 1, Sector 4, București"
   address_note: "reper Piața Unirii"
+  maps_query: "Strada Bibescu Vodă 1, Sector 4, București"
+
+# Social profiles (footer links + schema sameAs entity signals)
+social:
+  linkedin: "https://www.linkedin.com/in/ion-varzaru-061400267/"
+  instagram: "https://www.instagram.com/cabinet_de_avocat_varzaru_ion/"
+  facebook: "https://www.facebook.com/people/Cabinet-de-Avocat-Varzaru-Ion/100054661290146/"
 
 # Geo / local business signals (SEO + GEO)
 geo:
@@ -27,8 +34,8 @@ geo:
   region: "B"          # ISO 3166-2 county code for Bucharest
   region_name: "București"
   country: "RO"
-  latitude: 44.4268
-  longitude: 26.1025
+  latitude: 44.4256
+  longitude: 26.1028
   area_served:
     - "România"
     - "București"
@@ -44,9 +51,12 @@ knows_about:
   - "Expertiză medico-legală"
   - "Drept penal rutier"
 
-# Reference to the related firm site
+# Reference to the related firm site + social profiles (entity / authority signals)
 same_as:
   - "https://varzaru.ro"
+  - "https://www.linkedin.com/in/ion-varzaru-061400267/"
+  - "https://www.instagram.com/cabinet_de_avocat_varzaru_ion/"
+  - "https://www.facebook.com/people/Cabinet-de-Avocat-Varzaru-Ion/100054661290146/"
 
 # Build settings
 markdown: kramdown

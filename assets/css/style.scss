@@ -229,6 +229,12 @@ img { max-width: 100%; }
 .contact-value { color: #fff; font-size: 19px; font-weight: 600; }
 a.contact-value:hover { color: $gold; text-decoration: none; }
 .contact-actions { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+.contact-map {
+  margin-top: 32px; border-radius: $radius; overflow: hidden;
+  border: 1px solid $line; box-shadow: 0 10px 30px rgba(20,37,60,.10);
+  line-height: 0;
+}
+.contact-map iframe { display: block; width: 100%; }
 
 // ── Footer ─────────────────────────────────────────────────────
 .site-footer { background: $navy-deep; color: #aeb9c7; }
@@ -243,6 +249,12 @@ a.contact-value:hover { color: $gold; text-decoration: none; }
 .footer-col a:hover { color: $gold; text-decoration: none; }
 .footer-assoc { font-size: 14px; }
 .footer-assoc a { color: $gold; }
+.footer-social { margin-top: 14px; display: flex; gap: 10px; flex-wrap: wrap; }
+.footer-social a {
+  display: inline-block; padding: 6px 14px; font-size: 13px; font-weight: 600;
+  color: #d8e0ea; border: 1px solid rgba(255,255,255,.18); border-radius: 999px;
+}
+.footer-social a:hover { color: $navy-deep; background: $gold; border-color: $gold; text-decoration: none; }
 .footer-bottom { border-top: 1px solid rgba(255,255,255,.08); padding: 18px 0; font-size: 13px; color: #7d8aa0; }
 .footer-bottom .container { text-align: center; }
 .footer-bottom a { color: $gold; }

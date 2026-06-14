@@ -1,7 +1,7 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": ["LegalService", "Attorney"],
+  "@type": ["LegalService", "Attorney", "LocalBusiness"],
   "@id": "{{ site.url }}/#cabinet",
   "name": "{{ site.contact.name }}",
   "description": "{{ site.description | strip_newlines | strip }}",
@@ -13,9 +13,10 @@
   "priceRange": "Consultație juridică gratuită",
   "currenciesAccepted": "RON, EUR",
   "knowsLanguage": ["ro", "en", "es"],
+  "hasMap": "https://www.google.com/maps/search/?api=1&query={{ site.contact.maps_query | url_encode }}",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "{{ site.contact.address }}",
+    "streetAddress": "Strada Bibescu Vodă 1",
     "addressLocality": "{{ site.geo.locality }}",
     "addressRegion": "{{ site.geo.region_name }}",
     "addressCountry": "{{ site.geo.country }}"
