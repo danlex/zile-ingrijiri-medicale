@@ -1,0 +1,64 @@
+title: "Cabinet de Avocat VARZARU ION"
+tagline: "Despăgubiri pentru victimele accidentelor rutiere"
+description: >-
+  Cabinet de avocatură din București specializat în obținerea despăgubirilor
+  pentru victimele accidentelor rutiere. Explicăm ce înseamnă zilele de îngrijiri
+  medicale, cum se calculează și ce drepturi aveți. Consultanță juridică gratuită.
+lang: ro
+locale: ro_RO
+url: "https://zile-ingrijiri-medicale.ro"
+baseurl: ""
+author: "Cabinet de Avocat VARZARU ION"
+logo: "/assets/images/varzaru-logo.png"
+
+# Contact details reused across the page
+contact:
+  name: "Cabinet de Avocat VARZARU ION"
+  lawyer: "Avocat Ion Vărzaru"
+  phone: "0788 55 00 57"
+  phone_href: "+40788550057"
+  email: "office@varzaru.ro"
+  address: "Strada Bibescu Vodă 1, Sector 4, București"
+  address_note: "reper Piața Unirii"
+
+# Geo / local business signals (SEO + GEO)
+geo:
+  locality: "București"
+  region: "B"          # ISO 3166-2 county code for Bucharest
+  region_name: "București"
+  country: "RO"
+  latitude: 44.4268
+  longitude: 26.1025
+  area_served:
+    - "România"
+    - "București"
+    - "Uniunea Europeană"
+
+# Topics the practice is an authority on (entity signals for GEO)
+knows_about:
+  - "Zile de îngrijiri medicale"
+  - "Despăgubiri accidente auto"
+  - "Daune materiale"
+  - "Daune morale"
+  - "Vătămare corporală din culpă"
+  - "Expertiză medico-legală"
+  - "Drept penal rutier"
+
+# Reference to the related firm site
+same_as:
+  - "https://varzaru.ro"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - content/
+  - vendor/

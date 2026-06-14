@@ -1,0 +1,99 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["LegalService", "Attorney"],
+  "@id": "{{ site.url }}/#cabinet",
+  "name": "{{ site.contact.name }}",
+  "description": "{{ site.description | strip_newlines | strip }}",
+  "url": "{{ site.url }}/",
+  "logo": "{{ site.url }}{{ site.logo }}",
+  "image": "{{ site.url }}{{ site.logo }}",
+  "telephone": "{{ site.contact.phone_href }}",
+  "email": "{{ site.contact.email }}",
+  "priceRange": "Consultație juridică gratuită",
+  "currenciesAccepted": "RON, EUR",
+  "knowsLanguage": ["ro", "en", "es"],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "{{ site.contact.address }}",
+    "addressLocality": "{{ site.geo.locality }}",
+    "addressRegion": "{{ site.geo.region_name }}",
+    "addressCountry": "{{ site.geo.country }}"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": {{ site.geo.latitude }},
+    "longitude": {{ site.geo.longitude }}
+  },
+  "areaServed": [{% for a in site.geo.area_served %}{ "@type": "AdministrativeArea", "name": "{{ a }}" }{% unless forloop.last %}, {% endunless %}{% endfor %}],
+  "knowsAbout": [{% for k in site.knows_about %}"{{ k }}"{% unless forloop.last %}, {% endunless %}{% endfor %}],
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    "opens": "09:00",
+    "closes": "18:00"
+  },
+  "availableLanguage": ["ro", "en", "es"],
+  "makesOffer": [
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Despăgubiri din accidente rutiere", "serviceType": "Drept civil / asigurări RCA" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Daune materiale și daune morale", "serviceType": "Litigii despăgubiri" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Asistență și apărare penală (vătămare corporală din culpă)", "serviceType": "Drept penal rutier" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Consultanță privind zilele de îngrijiri medicale", "serviceType": "Expertiză medico-legală" } }
+  ],
+  "employee": [
+    { "@type": "Person", "name": "Ion Vărzaru", "jobTitle": "Avocat", "knowsLanguage": ["ro", "en", "es"], "memberOf": { "@type": "Organization", "name": "Baroul București" } },
+    { "@type": "Person", "name": "Maria Moraru", "jobTitle": "Avocat", "memberOf": { "@type": "Organization", "name": "Baroul București" } },
+    { "@type": "Person", "name": "Ștefania Ruxandra Baranga", "jobTitle": "Avocat", "memberOf": { "@type": "Organization", "name": "Baroul București" } }
+  ],
+  "sameAs": [{% for s in site.same_as %}"{{ s }}"{% unless forloop.last %}, {% endunless %}{% endfor %}]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "La câte zile de îngrijiri medicale se face dosar penal?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "În cazul unui accident auto (faptă neintenționată), art. 194 Cod Penal cere un număr de peste 90 de zile de îngrijiri medicale pentru ca fapta să constituie infracțiune. Indiferent de numărul de zile, fapta este infracțiune dacă a cauzat o infirmitate, un prejudiciu estetic grav și permanent, avortul sau punerea în primejdie a vieții persoanei."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Cum se calculează zilele de îngrijiri medicale? Este vorba de zilele cât a stat victima internată?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nu există echivalență între zilele de îngrijiri medicale și perioada de spitalizare. Numărul de zile de îngrijiri medicale este un număr abstract stabilit medico-legal, care ține cont de gravitatea leziunilor, trăsăturile clinico-evolutive ale afecțiunii și baremele medico-legale — nu este un simplu calcul aritmetic al zilelor de internare sau de concediu medical."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Am 70 de zile de îngrijiri medicale, iar poliția a închis dosarul. Ce pot face?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Chiar dacă dosarul penal a fost clasat, drepturile se pot valorifica pe calea unei acțiuni civile separate, formulată împotriva asigurătorului de răspundere civilă (RCA) al autovehiculului vinovat de producerea accidentului."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Nu am formulat în termen plângere penală și nu am certificat medico-legal. Mai pot obține despăgubiri?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Da. Se pot obține despăgubiri pe calea unei acțiuni civile separate împotriva asigurătorului RCA. În cadrul procesului civil puteți cere instanței o adresă către Institutul de Medicină Legală pentru stabilirea consecințelor medicale, iar instanța poate dispune o expertiză tehnică auto pentru stabilirea vinovăției."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Ce despăgubiri pot primi la 30–45 de zile de îngrijiri medicale?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cuantumul nu poate fi anticipat, instanța fiind suverană în aprecierea lui. Nu există un barem național pentru daunele morale; instanța analizează particularitățile fiecărei spețe, raportându-se la suferințele fizice și traumele emoționale. Daunele materiale se acordă în măsura dovedirii lor prin înscrisuri."
+      }
+    }
+  ]
+}
+</script>

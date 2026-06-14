@@ -1,0 +1,37 @@
+<section class="section contact-section" id="contact">
+  <div class="container">
+    <div class="contact-card">
+      <h2>Noi vă putem ajuta!</h2>
+      <p class="contact-lead">
+        Din acest moment, toate problemele dumneavoastră devin prioritatea noastră. Nu percepem onorariu
+        pentru consultația juridică, iar costurile pentru demararea procedurilor sunt minime.
+        <strong>Nu ezitați să ne contactați!</strong>
+      </p>
+
+      <div class="contact-details">
+        <div class="contact-item">
+          <span class="contact-label">Telefon</span>
+          <a href="tel:{{ site.contact.phone_href }}" class="contact-value">{{ site.contact.phone }}</a>
+        </div>
+        <div class="contact-item">
+          <span class="contact-label">E-mail</span>
+          <a href="mailto:{{ site.contact.email }}" class="contact-value">{{ site.contact.email }}</a>
+        </div>
+        <div class="contact-item">
+          <span class="contact-label">Sediu</span>
+          <span class="contact-value">{{ site.contact.address }}</span>
+        </div>
+      </div>
+
+      <p class="contact-note">
+        {{ site.contact.address_note }}. Nu ne puteți vizita la sediul cabinetului? Programul nostru
+        flexibil permite stabilirea unei întâlniri în proximitatea locului unde vă aflați.
+      </p>
+
+      <div class="contact-actions">
+        <a href="tel:{{ site.contact.phone_href }}" class="btn btn-primary">Sunați acum</a>
+        <a href="mailto:{{ site.contact.email }}" class="btn btn-ghost">Trimiteți un e-mail</a>
+      </div>
+    </div>
+  </div>
+</section>
