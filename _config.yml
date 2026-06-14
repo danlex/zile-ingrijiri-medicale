@@ -8,7 +8,7 @@ lang: ro
 locale: ro_RO
 url: "https://zile-ingrijiri-medicale.ro"
 baseurl: ""
-author: "Cabinet de Avocat VARZARU ION"
+author: "Ion Vărzaru"
 logo: "/assets/images/varzaru-logo.png"
 
 # Contact details reused across the page
@@ -51,10 +51,11 @@ knows_about:
   - "Expertiză medico-legală"
   - "Drept penal rutier"
 
-# Reference to the related firm site + social profiles (entity / authority signals)
+# Reference to the related firm site + firm social profiles (entity / authority
+# signals). The personal LinkedIn is attached to the Ion Vărzaru Person entity in
+# structured-data.html instead, since that profile belongs to the lawyer, not the firm.
 same_as:
   - "https://varzaru.ro"
-  - "https://www.linkedin.com/in/ion-varzaru-061400267/"
   - "https://www.instagram.com/cabinet_de_avocat_varzaru_ion/"
   - "https://www.facebook.com/people/Cabinet-de-Avocat-Varzaru-Ion/100054661290146/"
 

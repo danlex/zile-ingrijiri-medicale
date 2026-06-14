@@ -29,9 +29,9 @@ permalink: /llms.txt
 - Numărul de zile de îngrijiri medicale influențează atât încadrarea penală, cât și cuantumul daunelor.
 
 ## Echipa
-- Avocat Ion Vărzaru — Baroul București din 2004; engleză și spaniolă.
-- Avocat Maria Moraru — Baroul București din 1982; peste 38 de ani de experiență.
-- Avocat Ștefania Ruxandra Baranga — Baroul București din 2016.
+- Avocat Ion Vărzaru: Baroul București din 2004; engleză și spaniolă.
+- Avocat Maria Moraru: Baroul București din 1982; peste 38 de ani de experiență.
+- Avocat Ștefania Ruxandra Baranga: Baroul București din 2016.
 
 ## Pagini
 - [Acasă]({{ site.url }}/): prezentarea cabinetului

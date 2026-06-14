@@ -1,0 +1,60 @@
+# Single source of truth for the FAQ section.
+# Both the visible accordion (_includes/intrebari.html) and the FAQPage
+# JSON-LD (_includes/structured-data.html) render from this file, so the
+# structured data can never drift from the visible content (Google requires
+# FAQ rich-result markup to match what users see on the page).
+#
+# Each item: a question `q` and an ordered list of `blocks`.
+# A block is either { p: "paragraph text" } or
+# { quote: { label: "Art. …", text: "…" } } for a highlighted law citation.
+
+- q: "Am suferit un accident auto în urma căruia am avut 70 de zile de îngrijiri medicale, iar poliția a închis dosarul. Ce pot face în continuare?"
+  blocks:
+    - p: "Chiar dacă cauza a fost clasată, având în vedere prevederile Noului Cod Penal:"
+    - quote:
+        label: "Art. 194 — Vătămarea corporală."
+        text: "Fapta prevăzută în art. 193, care a cauzat vreuna dintre următoarele consecințe: o infirmitate; leziuni traumatice sau afectarea sănătății unei persoane, care au necesitat, pentru vindecare, mai mult de 90 de zile de îngrijiri medicale; un prejudiciu estetic grav și permanent; avortul; punerea în primejdie a vieții persoanei — se pedepsește cu închisoarea de la 2 la 7 ani. Când fapta a fost săvârșită în scopul producerii uneia dintre consecințele de la lit. a), b) și c), pedeapsa este închisoarea de la 3 la 10 ani."
+    - p: "Drepturile dumneavoastră se pot valorifica pe calea unei acțiuni civile separate, formulată împotriva asigurătorului de răspundere civilă care a emis polița RCA pentru autovehiculul vinovat de producerea accidentului."
+
+- q: "Am fost victima unui accident auto, dar nu am formulat în termen legal plângere penală și nici nu a fost eliberat un certificat medico-legal. Mai pot obține despăgubiri?"
+  blocks:
+    - p: "În cazul dumneavoastră se pot obține despăgubiri pe calea unei acțiuni civile separate, formulată împotriva asigurătorului de răspundere civilă ce a emis polița RCA pentru autovehiculul ce se face vinovat de producerea accidentului."
+    - p: "În cadrul procesului civil puteți solicita instanței emiterea unei adrese către Institutul de Medicină Legală, solicitând să se stabilească dacă v-a fost sau nu pusă în primejdie viața, dacă ați suferit o infirmitate, câte zile de îngrijiri medicale au fost necesare, dacă ați suferit un prejudiciu estetic grav și permanent și dacă v-a fost afectată temporar/permanent, total/parțial capacitatea de muncă."
+    - p: "În cazul în care nu este clar cui aparține vinovăția în producerea accidentului, instanța civilă poate dispune efectuarea unei expertize tehnice auto care să stabilească cui aparține vinovăția."
+
+- q: "Aș dori să știu cum se calculează zilele de îngrijiri medicale. Este vorba de zilele cât a stat victima internată?"
+  blocks:
+    - p: "Între conceptul de zile de îngrijiri medicale și perioada de timp petrecută efectiv în regim de spitalizare nu există echivalență. Numărul de zile de îngrijiri medicale necesare pentru vindecare, așa cum apare consemnat în certificatul sau raportul de expertiză medico-legală, este un număr abstract, în evaluarea căruia se ține cont de factori multipli, cum ar fi: durata tratamentului în regim de spitalizare, gravitatea leziunilor suferite, dar și trăsăturile clinico-evolutive ale afecțiunii."
+    - p: "Numărul de zile de îngrijiri medicale nu se rezumă, așadar, la un simplu calcul aritmetic, iar gravitatea leziunilor posttraumatice este cuantificată în acord cu baremele medico-legale care stabilesc durata medie a îngrijirilor medicale necesare fiecărei afecțiuni."
+
+- q: "Medicul legist a stabilit 10 zile de îngrijiri medicale pentru vindecare, însă eu am petrecut 3 săptămâni internat. Este posibil ca aprecierea cadrelor medicale să fie eronată?"
+  blocks:
+    - p: "Înainte de a lua în calcul o eventuală eroare, trebuie să aveți în vedere faptul că între conceptul de zile de îngrijiri medicale și perioada de timp petrecută efectiv în regim de spitalizare nu există echivalență."
+    - p: "Numărul de zile de îngrijiri medicale necesare pentru vindecare, așa cum apare consemnat în certificatul sau raportul de expertiză medico-legală, este un număr abstract, în evaluarea căruia se ține cont de factori multipli, cum ar fi: durata tratamentului în regim de spitalizare, gravitatea leziunilor suferite, dar și trăsăturile clinico-evolutive ale afecțiunii. Gravitatea leziunilor posttraumatice este cuantificată în acord cu baremele medico-legale care stabilesc durata medie a îngrijirilor medicale necesare fiecărei afecțiuni."
+
+- q: "Independent de culpa mea, am fost grav vătămat într-un accident rutier. Medicul legist a stabilit 70 de zile de îngrijiri medicale, deci nu există infracțiune. Pot obține totuși despăgubiri?"
+  blocks:
+    - p: "Cu toate că legea penală condiționează existența infracțiunii de vătămare corporală din culpă, printre altele, în raport cu numărul de zile de îngrijiri medicale, drepturile dumneavoastră pot fi valorificate pe calea unei acțiuni separate în cadrul unei instanțe civile, care urmează să aprecieze cuantumul daunelor morale și materiale ce vi se cuvin."
+
+- q: "În certificatul medico-legal apar 40 de zile de îngrijiri medicale, dar și o infirmitate permanentă. Fapta va fi infracțiune doar dacă mi se acordă peste 90 de zile?"
+  blocks:
+    - p: "Codul Penal stabilește condiții alternative, iar nu cumulative, pentru a determina dacă fapta constituie sau nu infracțiune:"
+    - quote:
+        label: "Art. 194 — Vătămarea corporală."
+        text: "Fapta prevăzută în art. 193, care a cauzat vreuna dintre următoarele consecințe: a) o infirmitate; b) leziuni traumatice sau afectarea sănătății unei persoane, care au necesitat, pentru vindecare, mai mult de 90 de zile de îngrijiri medicale; c) un prejudiciu estetic grav și permanent; d) avortul; e) punerea în primejdie a vieții persoanei."
+    - p: "Prin urmare, întrucât ați rămas cu o infirmitate permanentă, fapta constituie infracțiune indiferent de numărul de zile de îngrijiri medicale acordate."
+
+- q: "Ce despăgubiri pot primi la 30 de zile de îngrijiri medicale scrise de IML?"
+  blocks:
+    - p: "Nimeni nu poate anticipa dimensiunea despăgubirilor ce urmează a fi acordate de instanța de judecată, aceasta fiind suverană în aprecierea cuantumului reparatoriu la care victimele accidentelor sunt îndreptățite."
+    - p: "Întrucât în prezent nu există un barem aplicabil la nivel național care să stabilească limitele de despăgubire morală pentru fiecare categorie de vătămări, instanța hotărăște analizând particularitățile fiecărei spețe, raportându-se la suferințele fizice și traumele emoționale suferite de fiecare individ în parte. Cu privire la daunele materiale, acestea sunt acordate în măsura în care pot fi dovedite prin înscrisuri."
+
+- q: "Ce despăgubiri pot primi la 45 de zile de îngrijiri medicale scrise de IML?"
+  blocks:
+    - p: "Nimeni nu poate anticipa dimensiunea despăgubirilor ce urmează a fi acordate de instanța de judecată, aceasta fiind suverană în aprecierea cuantumului reparatoriu la care victimele accidentelor sunt îndreptățite."
+    - p: "Întrucât în prezent nu există un barem aplicabil la nivel național care să stabilească limitele de despăgubire morală pentru fiecare categorie de vătămări, instanța hotărăște analizând particularitățile fiecărei spețe, raportându-se la suferințele fizice și traumele emoționale suferite de fiecare individ în parte. Cu privire la daunele materiale, acestea sunt acordate în măsura în care pot fi dovedite prin înscrisuri."
+
+- q: "La câte zile de îngrijiri medicale se face dosar penal?"
+  blocks:
+    - p: "În împrejurarea unui accident auto, deci a unei fapte neintenționate, dispozițiile art. 194 Cod Penal stabilesc necesitatea existenței unui număr de 90 de zile de îngrijiri medicale pentru ca fapta să constituie infracțiune."
+    - p: "De asemenea, indiferent de numărul de zile medicale necesare vindecării, fapta va reprezenta infracțiune atunci când are drept urmare o infirmitate, un prejudiciu estetic grav și permanent, avortul sau punerea în primejdie a vieții persoanei."
