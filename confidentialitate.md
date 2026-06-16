@@ -4,6 +4,10 @@ title: "Politică de confidențialitate"
 description: "Politica de confidențialitate și prelucrarea datelor cu caracter personal — Cabinet de Avocat VARZARU ION."
 permalink: /confidentialitate/
 updated: "iunie 2026"
+# Old policy URLs (privacy + cookie policy were separate pages on the old WordPress site)
+redirect_from:
+  - /politica-de-confidentialitate/
+  - /politica-de-utilizare-cookie-uri/
 ---
 
 Această politică explică modul în care **Cabinet de Avocat VARZARU ION** („Cabinetul") prelucrează
